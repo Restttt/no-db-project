@@ -1,0 +1,11 @@
+
+
+.next-button {
+    display: relative;
+    float: right;
+}
+
+.previous-button {
+    display: relative;
+    float: left;
+}
