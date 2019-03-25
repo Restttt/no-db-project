@@ -40,6 +40,4 @@ input {
 
  ::placeholder {
     color: white;
-    -webkit-text-stroke-width: .04vw;
-    -webkit-text-stroke-color: #510207;
 }

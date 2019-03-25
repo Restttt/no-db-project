@@ -11,5 +11,6 @@ app.post('/api/swansonQuotes', ronC.addQuote);
 app.delete('/api/swansonQuotes/:id', ronC.deleteQuote);
 app.put('/api/swansonQuote/:id', ronC.editQuote);
 
+app.post('/api/swansonPushExternal', ronC.addExternal);
 
 app.listen(PORT, () => console.log(`we are live at port ${PORT}`));

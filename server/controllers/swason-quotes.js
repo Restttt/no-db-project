@@ -113,4 +113,18 @@ module.exports = {
 
         res.status(200).send(swansonQuotes);
     },
+    addExternal: (req, res) => {
+
+        let newQuote = {
+            id: id++,
+            season: "NA",
+            episode: "NA",
+            quote: req.body,
+            img: "NA"
+        }
+
+        swansonQuotes.push(newQuote);
+
+        res.status(200).send(swansonQuotes);
+    }
 }

@@ -11,7 +11,8 @@ class SwansonAdd extends Component {
             season: 0,
             episode: 0,
             quote: '',
-            img: ''
+            img: '',
+            edit: false
         };
     };
 
@@ -31,29 +32,29 @@ class SwansonAdd extends Component {
     }
 
     changeDisplay = () => {
-        if (this.state.display === "hidden") {
-            this.setState({ display: "visible"});
+        if (this.state.edit === false) {
+            this.setState({ edit: true});
         } else {
-            this.setState({ display: "hidden"})
+            this.setState({ edit: false})
         };
     };
 
     render() {
-        let display = {
-            visibility: this.state.display
-        }
 
-        return(
+        return this.state.edit ? (
             <div className="add-fields">
                 <button className="toggle-display-add" onClick={() => this.changeDisplay()}>Add Quote</button>
-                <input name="img" type="text" style={display} placeholder="img" onChange={this.updateText}/>
-                <input name="season" type="number" style={display} placeholder="season" onChange={this.updateText}/>
-                <input name="episode" type="number" style={display} placeholder="episode" onChange={this.updateText}/>
-                <input name="quote" type="text" style={display} placeholder="quote" onChange={this.updateText}/>
-                <button style={display} className="add-quote-button" onClick={() => this.addQuote()}>Submit Quote</button>
-            </div>
-        )
-    }
-}
+                <input name="img" type="text" placeholder="img" onChange={this.updateText}/>
+                <input name="season" type="number" placeholder="season" onChange={this.updateText}/>
+                <input name="episode" type="number" placeholder="episode" onChange={this.updateText}/>
+                <input name="quote" type="text" placeholder="quote" onChange={this.updateText}/>
+                <button className="add-quote-button" onClick={() => this.addQuote()}>Submit Quote</button>
+            </div> 
+    ) : (
+        <div>
+            <button className="toggle-display-add" onClick={() => this.changeDisplay()}>Add Quote</button>
+        </div>
+    )};
+};
 
 export default SwansonAdd;
