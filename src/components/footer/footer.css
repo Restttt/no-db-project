@@ -6,9 +6,7 @@ footer {
     justify-content: center;
     align-items: center;
 
-    width: 100vw !important;
-    margin: 0 !important;
-    padding: 0;
+    width: 100vw;
 
     font-size: 3vw;
     font-family: 'Oswald', sans-serif;
@@ -18,5 +16,6 @@ footer {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #510207;
     
+    border-top: 3px solid #510207;
     background: #7D212E;
 }

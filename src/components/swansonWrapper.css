@@ -3,9 +3,11 @@
 .next-button {
     display: relative;
     float: right;
+    margin: 0 2vw;
 }
 
 .previous-button {
     display: relative;
     float: left;
+    margin: 0 3vw;
 }

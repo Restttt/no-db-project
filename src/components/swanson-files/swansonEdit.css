@@ -1,7 +1,19 @@
 @import "https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700";
 
-.edit-button {
-    color: black;
-    background: #396B9D;
-    border: none;
+.edit {
+    color: white;
+    -webkit-text-stroke-width: .04vw;
+    -webkit-text-stroke-color: #510207;
+    border: solid 3px #510207;
+    background-color: #7D212E;
+
+    font-size: .9vw;
+    
+    margin: 1vh 1vw;
+}
+
+::placeholder {
+    color: white;
+    -webkit-text-stroke-width: .04vw;
+    -webkit-text-stroke-color: #510207;
 }

@@ -54,6 +54,18 @@ let swansonQuotes = [
         episode: 11,
         quote: "Ok, everyone, SHUT UP and LOOK AT ME! Welcome to Visions of Nature. This room has several paintings in it. Some are big, some are small. People did them and they are here now, I believe that after this over they’ll be hung in government buildings. Why the government is involved in an art show is beyond me. I also think it’s pointless for a human to paint scenes of nature when they can just go outside and stand in it. Anyway please do not misinterpret the fact that I am talking right now as genuine interest in art and attempt to discuss it with me further, end of speech.",
         img: "http://swansonquotes.com/wp-content/uploads/s03-ep11-artshow-1000x500.jpg"
+    }, {
+        id: id++,
+        season: 5,
+        episode: 13,
+        quote: "...Next thing you wanna do is ditch the terrier and get yourself a proper dog. Any dog under fifty pounds is a cat and cats are pointless.",
+        img: "https://i.imgur.com/GsJYWl6.png"
+    }, {
+        id: id++,
+        season: 4,
+        episode: 19,
+        quote: "I’ve found a way to reduce government spending by eighty five percent. Here’s a hint, no more departments.",
+        img: "http://swansonquotes.com/wp-content/uploads/s04-ep19-reducespending-1000x500.jpg"
     }
 ];
 

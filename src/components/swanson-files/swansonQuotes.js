@@ -14,10 +14,17 @@ class SwansonQuotes extends Component {
     }
 
     deleteQuote = (id) => {
-        let currentIndex = this.state.index
-        this.props.deleteQuoteFn(id);
-        this.setState({ index: currentIndex - 1})
-    }
+        let answer = prompt("Are you sure you want to delete this glorious quote? Type 'yes' if you are certain.")
+        answer = answer.toLowerCase();
+        if (answer === 'yes') {
+            this.props.deleteQuoteFn(id);
+
+            let currentIndex = this.state.index
+            if (currentIndex > 0) {
+                this.setState({ index: currentIndex - 1})
+            };
+        };
+    };
 
     previous = () => {
         let currentIndex = this.state.index
@@ -62,8 +69,7 @@ class SwansonQuotes extends Component {
             )
         })
         return(
-            <div>
-                <h1 className="quote-counter">Ron Quote: {this.state.index + 1} / {this.props.quotes.length}</h1>
+            <div class="swanson-quotes">
                 <button className="previous-button" onClick={() => this.previous()}>Previous</button>
                 <button className="next-button" onClick={() => this.random()}>Random Quote</button>
                 <button className="next-button" onClick={() => this.next()}>Next</button>

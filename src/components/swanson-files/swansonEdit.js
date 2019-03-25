@@ -42,16 +42,16 @@ class SwansonEdit extends Component {
 
         return this.state.edit ? (
             <div>
-                <button className="toggle-display-edit edit-button" onClick={() => this.changeDisplay()}>Edit Quote</button> <br />
-                <input name="img" type="text" placeholder="img" onChange={this.updateText}/>
-                <input name="season" type="number"placeholder="season" onChange={this.updateText}/>
-                <input name="episode" type="number" placeholder="episode" onChange={this.updateText}/>
-                <input name="quote" type="text" placeholder="quote" onChange={this.updateText}/> <br />
-                <button className="edit-quote-button edit-button" onClick={() => this.editQuote()}>Submit Edit</button>
+                <button className="toggle-display-edit edit" onClick={() => this.changeDisplay()}>Edit Quote</button> <br />
+                <input className="edit" name="img" type="text" placeholder="img" onChange={this.updateText}/>
+                <input className="edit" name="season" type="number"placeholder="season" onChange={this.updateText}/>
+                <input className="edit" name="episode" type="number" placeholder="episode" onChange={this.updateText}/>
+                <input className="edit" name="quote" type="text" placeholder="quote" onChange={this.updateText}/> <br />
+                <button className="edit-quote-button edit" onClick={() => this.editQuote()}>Submit Edit</button>
             </div>
         ) : ( 
             <div>
-                <button className="toggle-display-edit edit-button" onClick={() => this.changeDisplay()}>Edit Quote</button>
+                <button className="toggle-display-edit edit" onClick={() => this.changeDisplay()}>Edit Quote</button>
             </div>
         )
     }
